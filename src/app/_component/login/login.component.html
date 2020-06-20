@@ -1,0 +1,24 @@
+
+
+    <form #loginForm="ngForm" (submit)="loginSubmit(loginForm);">
+<div class="imgcontainer">
+      <img src="../../../assets/images/login.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" id="username" name="username" class="form-control" required minlength="4" [(ngModel)]="username"  >
+      <label for="password"><b>Password</b></label>
+      <input type="password" id="password" name="password" class="form-control" required minlength="4" [(ngModel)]="password" >
+
+
+
+  
+      <button type="submit">Login</button>
+      
+    </div>
+   </form>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+ 
