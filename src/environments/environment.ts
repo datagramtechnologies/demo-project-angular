@@ -4,9 +4,10 @@
 
 
 export const environment = {  
-  apiUrl: 'http://34.93.39.198:8080/',
+  baseAPI: 'http://newsapi.org/v2/',
   enableDebug: true,
-  production:false
+  production:false,
+  apiKey:"d77054adda96407c9076a73cf2a6f80e"
 };
 /*
  * For easier debugging in development mode, you can import the following file
