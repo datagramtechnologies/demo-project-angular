@@ -1,0 +1,51 @@
+.wrapper-main{
+    margin: 50vh auto;
+}
+.logo-item{
+height: 100px;
+width:100px;
+border-radius:50%;
+background-color: blue;
+text-align: center;
+
+}
+.step{
+    opacity: 0;
+    transition: .9s ease-in-out all;
+    }
+
+.logo p{
+    margin-top: 2rem;
+}
+.logo{
+    border: 2px dashed blue;
+    height: 115px;
+    width: 115px;
+    padding: 6px;
+    border-radius: 50%;
+    outline: 0;
+    position: absolute;
+    top: 50vh;
+}
+
+.rotate {
+    animation: rotation 2s infinite linear;
+  }
+
+.img2{
+    margin: 0 auto;
+    position: absolute;
+    top: 50vh;
+    width: 100px;
+    height: 100px;
+}
+
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
