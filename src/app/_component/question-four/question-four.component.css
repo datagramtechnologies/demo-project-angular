@@ -21,8 +21,13 @@ text-align: center;
 .logo p{
     margin-top: 2rem;
 }
+.dashed-border{
+    border: 2px dashed blue !important;
+}
+.solid-border{
+    border: 2px solid blue !important;
+}
 .logo{
-    border: 2px solid blue;
     height: 115px;
     width: 115px;
     padding: 6px;

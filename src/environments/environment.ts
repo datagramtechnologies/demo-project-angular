@@ -6,7 +6,8 @@
 export const environment = {  
   baseAPI: 'https://5f8ffee8e0559c0016ad5df4.mockapi.io/api/',
   enableDebug: true,
-  production:false
+  production:false,
+  maintenanceBlock:true
 };
 /*
  * For easier debugging in development mode, you can import the following file

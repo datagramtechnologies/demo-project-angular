@@ -26,10 +26,7 @@ btnName = "Start";
 
   ngOnInit() {
   
-    this.dashboardService.getBookList().subscribe(res=>{
-      this.bookList = res;
-      console.log(this.bookList);
-    });
+    
 
 
     this.observable = new Observable(subscriber => {

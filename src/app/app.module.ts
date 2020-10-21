@@ -4,17 +4,20 @@ import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './_component/login/login.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { DashboardComponent } from './_component/dashboard/dashboard.component';
 import { islogin } from './_guards/islogin.guard';
 import { QuestionFourComponent } from './_component/question-four/question-four.component';
+import { ApiInterceptor } from './_interceptors/api.interceptor';
+import { QuestionTwoComponent } from './_component/question-two/question-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    QuestionFourComponent
+    QuestionFourComponent,
+    QuestionTwoComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import { QuestionFourComponent } from './_component/question-four/question-four.
   ],
   providers: [
     islogin,
+    { provide: HTTP_INTERCEPTORS, useClass: ApiInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]
 })
