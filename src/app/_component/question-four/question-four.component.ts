@@ -12,16 +12,19 @@ isHide:boolean = true;
   ngOnInit() {
   }
 fadeOut(){
-  this.isHide = true;
-  var element = document.getElementById("logo-item");
-  element.classList.add("step");
-  var element2 = document.getElementById("welcometext");
+  this.isHide = false;
+  let element = document.getElementById("logo-item");
+  element.classList.add("stepout");
+  let element2 = document.getElementById("welcometext");
+  let element4 = document.getElementById("img2");
   
   
   element2.innerHTML = "Welcome";
-  element2.classList.remove("step");
+  element2.classList.add("stepin");
 
-  var element3 = document.getElementById("logo");
+  element4.classList.add("stepin");
+
+  let element3 = document.getElementById("logo");
   element3.classList.add("rotate");
 }
 }

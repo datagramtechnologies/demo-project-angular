@@ -9,8 +9,12 @@ background-color: blue;
 text-align: center;
 
 }
-.step{
+.stepout{
     opacity: 0;
+    transition: .9s ease-in-out all;
+    }
+.stepin{
+    opacity: 1 !important;
     transition: .9s ease-in-out all;
     }
 
@@ -26,18 +30,27 @@ text-align: center;
     outline: 0;
     position: absolute;
     top: 50vh;
+    z-index: 999;
+    cursor: pointer;
 }
-
+#welcometext{
+    text-align:center;
+    width: 100%;     
+    font-size: 1.5rem;
+}
 .rotate {
-    animation: rotation 2s infinite linear;
+    animation: rotation 8s infinite linear;
   }
-
+.img1{
+    width: 65px;
+    margin-top: 40px;
+    z-index: 999;
+}
 .img2{
-    margin: 0 auto;
-    position: absolute;
-    top: 50vh;
-    width: 100px;
-    height: 100px;
+    width: 116px;
+    margin-top: -92px;
+    margin-left: 2px;
+    z-index: 99;
 }
 
 
