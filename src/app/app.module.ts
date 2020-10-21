@@ -10,6 +10,7 @@ import { islogin } from './_guards/islogin.guard';
 import { QuestionFourComponent } from './_component/question-four/question-four.component';
 import { ApiInterceptor } from './_interceptors/api.interceptor';
 import { QuestionTwoComponent } from './_component/question-two/question-two.component';
+import { QuestionThreeComponent } from './_component/question-three/question-three.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { QuestionTwoComponent } from './_component/question-two/question-two.com
     LoginComponent,
     DashboardComponent,
     QuestionFourComponent,
-    QuestionTwoComponent
+    QuestionTwoComponent,
+    QuestionThreeComponent
   ],
   imports: [
     BrowserModule,
