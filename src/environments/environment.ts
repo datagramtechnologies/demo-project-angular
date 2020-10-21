@@ -4,10 +4,9 @@
 
 
 export const environment = {  
-  baseAPI: 'http://newsapi.org/v2/',
+  baseAPI: 'https://5f8ffee8e0559c0016ad5df4.mockapi.io/api/',
   enableDebug: true,
-  production:false,
-  apiKey:"d77054adda96407c9076a73cf2a6f80e"
+  production:false
 };
 /*
  * For easier debugging in development mode, you can import the following file

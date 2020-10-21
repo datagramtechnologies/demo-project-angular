@@ -13,6 +13,7 @@ isHide:boolean = true;
   }
 fadeOut(){
   this.isHide = false;
+  document.getElementById("logo").style.border = "2px dashed blue  ";
   let element = document.getElementById("logo-item");
   element.classList.add("stepout");
   let element2 = document.getElementById("welcometext");
