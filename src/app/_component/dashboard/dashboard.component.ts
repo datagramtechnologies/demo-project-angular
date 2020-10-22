@@ -50,9 +50,9 @@ btnName = "Start";
           subscriber.next(timeString+'=>'+this.val) ;
           
         }
-        if(! this.subscribe){
-          subscriber.next("Paused") ;
-        }
+        // if(!){
+        //   subscriber.next("Paused") ;
+        // }
        
         
         
