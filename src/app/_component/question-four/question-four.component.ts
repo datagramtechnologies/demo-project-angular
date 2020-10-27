@@ -23,6 +23,7 @@ fadeOut(){
   
   element2.innerHTML = "Welcome";
   element2.classList.add("stepin");
+  element2.classList.add("bringup");
 
   element4.classList.add("stepin");
 

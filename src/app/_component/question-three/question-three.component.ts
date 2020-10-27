@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionThreeComponent implements OnInit {
   public type: number;
-  public machineName: string;
   constructor() {}
 
   ngOnInit() {
@@ -16,13 +15,12 @@ export class QuestionThreeComponent implements OnInit {
 
   get name(): string {
     let machineName = '';
-    if (this.machineName == null || this.machineName == '' || this.machineName == undefined) {
       if (this.type == 2) machineName = 'tractor';
       if (this.type == 0) machineName = 'bulldozer';
       if (this.type == 1) machineName = 'crane';
       if (this.type == 4) machineName = 'car';
       if (this.type == 3) machineName = 'truck';
-    }
+    
     return machineName;
   }
 
