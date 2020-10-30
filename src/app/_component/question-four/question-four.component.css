@@ -24,10 +24,10 @@ text-align: center;
     margin-top: 2rem;
 }
 .dashed-border{
-    border: 2px dashed blue !important;
+    border: 2px dashed #379cd6 !important;
 }
 .solid-border{
-    border: 2px solid blue !important;
+    border: 2px solid #379cd6 !important;
 }
 .logo{
     height: 115px;
@@ -43,7 +43,8 @@ text-align: center;
 #welcometext{
     text-align: center;
     width: 100%;
-    font-size: .8rem;
+    font-size: .7rem;
+    color: #a1a1a1;
 }
 .rotate {
     animation: rotation 8s infinite linear;
@@ -67,6 +68,8 @@ left: auto;
 }
 .bringup{
     margin-top: -165px;
+    font-size: 1rem !important;
+    color: #000 !important;
 }
 
 @-webkit-keyframes rotation {
